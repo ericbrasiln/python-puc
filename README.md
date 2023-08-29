@@ -16,7 +16,7 @@ Duração: dias 18, 19, 20 e 21 de setembro, de 17h às 20h, por Zoom.
 
 - Introdução à Python
     - O que é Python e por que é usado?
-    - Como instalar o Python e o VSCode
+    - Como instalar o Python?
     - Ambiente de trabalho no VSCode
 - Conceitos básicos de programação em Python
     - Variáveis
