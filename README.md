@@ -20,19 +20,19 @@ Duração: dias 18, 19, 20 e 21 de setembro, de 17h às 20h, por Zoom.
     - Ambiente de trabalho no VSCode
 - Conceitos básicos de programação em Python
     - Variáveis
-    - Operadores
     - Tipos de Dados
+    - Operadores
     - print() input() e format()
-- Desafio 1
+- Desafio 1: *Seu primeiro script*
 
 ### Dia 2
 
 - Dúvidas sobre Desafio 1
-- Controladores de fluxo
 - Lendo e analisando texto com python
     - Manipulando strings e listas
     - Trabalhando com ficheiros simples em python
     - Contagem de frequência de palavras e palavras-chave em contexto com python
+- Controladores de fluxo
 - Desafio 2
 
 ### Dia 3
