@@ -1,8 +1,6 @@
 ''' Script para apresentar a noção de variáveis em Pytho
 '''
 
-import pandas as pd
-
 name = input("Digite seu nome: ")
 
 print(f'Olá, {name}! Aproveite o curso de Python')
@@ -20,3 +18,19 @@ elif resposta == 'não':
 else:
     print("Que resposta é essa? Tchau")
     exit()
+
+
+def soma(a, b):
+    '''Função para somar números inteiros
+    '''
+    x = a + b
+    return x
+
+
+a = int(input("Diga um número: "))
+b = int(input("Agora outro: "))
+
+# chamar a função
+resultado = soma(a, b)
+
+print(resultado)
