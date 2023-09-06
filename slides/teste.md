@@ -1,6 +1,6 @@
 ---
 title:   Noções de Programação em Python para as Humanidades 
-date: 2023-09-18
+date: 18-21/09/2023
 author:  Eric Brasil 󰇰 ericbrasiln@proton.me
 styles:
   link:
@@ -38,29 +38,23 @@ styles:
     column_spacing: 5
   margin:
     top: 1
-    bottom: 0
+    bottom: 1
   padding:
     top: 1
     bottom: 1
 ---
 
-# Título 1
+# Apresentação
 
-Curso de Python para o Laboratório de Humanidades Digitais da PUC-RJ
+Esse curso busca apresentar os conceitos básicos da linguagem de programação Python, com foco na atuação de estudantes e profissionais da área das Ciências Humanas.
 
-Professor: [Eric Brasil](https://ericbrasiln.github.io/)
+## Sobre o professor
 
-<!-- stop -->
+[Eric Brasil](https://ericbrasiln.github.io/)
 
-## Título 2
+---
 
-Parágrafo 1
-
-Parágrafo 2
-
-<!-- stop -->
-
-### *Título 3*
+# Estrutura do curso
 
 Exemplo de tabela:
 
@@ -72,17 +66,38 @@ Exemplo de tabela:
 
 # Dia 1
 
-O que vamos aprender?
+## Apresentação inicial
+- Estrutura do curso
 
-## Pq Python 󱔎 ?
+## Introdução à Python
+- O que é Python e por que é usado?
+- Como instalar o Python?
+- Ambiente de trabalho no VSCode
 
-- exemplo
-- exemplo
-- exemplo
+## Conceitos básicos de programação em Python   
+- [Variáveis](variables.py)
+- [Tipos de Dados](tipos.py)
+- [Operadores](fluxos.py)
+- [print() input() e format()](funcoes.py)
 
-<!-- stop -->
+## Desafio 1
 
-### *Instalação*
+*Seu primeiro script*
+
+---
+
+# Pq Python 󱔎 ?
+
+[Python](https://docs.constellate.org/key-terms/#python) é uma das linguagens de programação que mais crescem no mundo. Aprender Python] é uma ótima escolha pois é uma linguagem:
+
+* amplamente adotada nas humanidades digitais e ciência de dados;
+* que tem uma curva de aprendizado menor do que outras linguagens; 
+* flexível, possuindo amplo suporte para lidar com dados numéricos e textuais;
+* que lembra o inglês e é legível para quem sabe esse idioma.
+
+---
+
+# *Instalação*
 
 1. Baixe
 2. Instale
