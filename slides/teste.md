@@ -1,7 +1,7 @@
 ---
-title:  Noções de Programação em Python para as Humanidades 
+title:   Noções de Programação em Python para as Humanidades 
 date: 2023-09-18
-author: Eric Brasil 󰇰 ericbrasiln@proton.me
+author:  Eric Brasil 󰇰 ericbrasiln@proton.me
 styles:
   link:
     bg: default
@@ -26,16 +26,16 @@ styles:
       suffix: ''
     '2':
       bg: default
-      fg: '#7dc4e4'
-      prefix: " "
+      fg: '#7dc4e4,bold'
+      prefix: " "
       suffix: ''
     '3':
       bg: default
       fg: '#8bd5ca'
-      prefix: " "
+      prefix: " "
       suffix: ''
   table:
-    column_spacing: 15
+    column_spacing: 5
   margin:
     top: 1
     bottom: 0
@@ -74,7 +74,7 @@ Exemplo de tabela:
 
 O que vamos aprender?
 
-## Pq Python?
+## Pq Python 󱔎 ?
 
 - exemplo
 - exemplo
@@ -86,3 +86,6 @@ O que vamos aprender?
 
 1. Baixe
 2. Instale
+
+
+![](~/Imagens/58128421.png)
