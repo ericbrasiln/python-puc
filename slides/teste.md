@@ -1,6 +1,5 @@
 ---
 title:   Noções de Programação em Python para as Humanidades 
-date: 18-21/09/2023
 author:  Eric Brasil 󰇰 ericbrasiln@proton.me
 styles:
   link:
@@ -35,7 +34,7 @@ styles:
       prefix: " "
       suffix: ''
   table:
-    column_spacing: 5
+    column_spacing: 2
   margin:
     top: 1
     bottom: 1
@@ -58,34 +57,31 @@ Esse curso busca apresentar os conceitos básicos da linguagem de programação 
 
 Exemplo de tabela:
 
-| coluna 1 | coluna 2 |
-| -------- | -------- |
-| texto | texto|
+| Dia 1                 | Dia 2                         | Dia 3             | Dia 4 |
+| -----                 | -----                         | ----------------- | ----- |
+| Apresentação geral    | Funções                       | Módulos e pacotes | Visualização dos dados com Plotly |
+| Introdução à Python   | Strings, listas e dicionários | Pandas            | Revista geral |
+| Conceitos básicos     | Controladores de fluxo        |                   | Conclusão |
+| Desafio 1             | Desafio 2                     | Desafio 3         | Desafio 4 |
 
 ---
 
-# Dia 1
+# Dia 1: Conceitos básicos de programação em Python
 
-## Apresentação inicial
+## Estrutura da aula
+
+### Apresentação geral
+### Introdução à Python
+### Conceitos básicos de programação em Python   
+### Desafio 1
+
+---
+# Apresentação geral
+- Objetivos gerais
 - Estrutura do curso
-
-## Introdução à Python
-- O que é Python e por que é usado?
-- Como instalar o Python?
-- Ambiente de trabalho no VSCode
-
-## Conceitos básicos de programação em Python   
-- [Variáveis](variables.py)
-- [Tipos de Dados](tipos.py)
-- [Operadores](fluxos.py)
-- [print() input() e format()](funcoes.py)
-
-## Desafio 1
-
-*Seu primeiro script*
+- Metodologia
 
 ---
-
 # Pq Python 󱔎 ?
 
 [Python](https://docs.constellate.org/key-terms/#python) é uma das linguagens de programação que mais crescem no mundo. Aprender Python] é uma ótima escolha pois é uma linguagem:
@@ -102,5 +98,54 @@ Exemplo de tabela:
 1. Baixe
 2. Instale
 
+---
+# Ambiente de trabalho no VSCode
 
-![](~/Imagens/58128421.png)
+explicar 
+
+---
+
+# Conceitos básicos de programação em Python   
+- O temido terminal!
+- Variáveis
+- Tipos de Dados
+- Operadores aritméticos, relacionais e Booleanos
+- print() input() e format()
+
+---
+
+# Desafio 1
+
+*Seu primeiro script*
+
+---
+
+# Dia 2: criando funções, manipulando texto e listas e controlando o fluxo do código
+
+## Estrutura da aula
+
+### Dúvidas sobre Desafio 1
+### Criando Funções
+### Lendo e analisando texto com python
+### Listas
+### Controladores de fluxo
+### Desafio 2
+
+---
+
+# Dia 3: Analisando dados com Pandas
+
+## Estrutura da aula
+
+### Módulos e pacotes
+### Pandas
+### Desafio 3
+---
+
+# Dia 4: Visualização dos dados com Plotly
+
+## Estrutura da aula
+
+### Visualização dos dados com Plotly
+### Revista geral
+### Conclusão
