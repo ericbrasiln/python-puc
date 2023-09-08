@@ -1,8 +1,10 @@
 # Dia 1 
 
-## Apresentação inicial
+## Apresentação geral
 
+- Objetivos gerais
 - Estrutura do curso
+- Metodologia
 
 ## Introdução à Python
 
@@ -164,6 +166,10 @@ type(nome)
 
 ### print() input() e format()
 
+Vejamos três funções básicas do Python que nos ajudarão a interagir com o usuário e a imprimir valores na tela.
+
+Funções em Python são blocos de código que executam uma tarefa específica. As funções podem receber valores de entrada (argumentos) e retornar valores de saída. Elas são reconhecidas por terem um nome seguido de parênteses.
+
 Para imprimir na tela um valor devemos utilizar a função `print()`.
 
 Para receber um valor de entrada do usuário, usamos a função `input()`.
@@ -181,4 +187,6 @@ print(f'Olá, {new_name}! Como vai?')
 
 ## Desafio 1: *Seu primeiro script*
 
+Monte um script que receba o nome de uma pessoa e sua idade. Imprima na tela uma mensagem de saudação (que inclua o nome) e informe quantos anos ela terá em 2030.
 
+Tente utilizar os operadores aritméticos e as funções print(), format() e input().
