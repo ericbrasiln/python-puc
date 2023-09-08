@@ -55,17 +55,25 @@ Esse curso busca apresentar os conceitos básicos da linguagem de programação 
 
 # Estrutura do curso
 
-Exemplo de tabela:
-
-| Dia 1                 | Dia 2                         | Dia 3             | Dia 4 |
-| -----                 | -----                         | ----------------- | ----- |
-| Apresentação geral    | Funções                       | Módulos e pacotes | Visualização dos dados com Plotly |
-| Introdução à Python   | Strings, listas e dicionários | Pandas            | Revista geral |
-| Conceitos básicos     | Controladores de fluxo        |                   | Conclusão |
-| Desafio 1             | Desafio 2                     | Desafio 3         | Desafio 4 |
+| Dia 1                 | Dia 2                         |
+| -----                 | -----                         |
+| Apresentação geral    | Funções                       |
+| Introdução à Python   | Strings, listas e dicionários |
+| Conceitos básicos     | Controladores de fluxo        |
+| Desafio 1             | Desafio 2                     |
 
 ---
 
+# Estrutura do curso (cont.)
+
+| Dia 3             | Dia 4 |
+| ----------------- | ----- |
+| Módulos e pacotes | Visualização dos dados com Plotly |
+| Pandas            | Revista geral |
+|                   | Conclusão |
+| Desafio 3         | Desafio 4 |
+
+---
 # Dia 1: Conceitos básicos de programação em Python
 
 ## Estrutura da aula
