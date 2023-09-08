@@ -2,6 +2,36 @@
 
 ## Dúvidas sobre Desafio 1
 
+## Funções
+
+Podemos criar nossas próprias funções para executar tarefas específicas. Para isso, usamos a palavra reservada `def` seguida do nome da função e dos parênteses. 
+
+```python
+def imprimir_saudacao(pessoa):
+    print(f'Olá, {pessoa}! Como vai?')
+```
+Essa função se chama `imprimir_saudacao` e recebe um argumento `pessoa`. O argumento é uma variável que será utilizada dentro da função.
+
+Para executar a função, basta chamá-la pelo nome e passar o argumento.
+
+```python
+imprimir_saudacao('Maria')
+```
+
+Mas e se eu quiser utilizar o retorno da função em uma variável?
+
+```python
+def dobrar_valor(valor):
+    return valor * 2
+```
+ 
+Agora podemos utilizar o retorno da função em uma variável.
+
+```python
+dobro = dobrar_valor(5)
+print(dobro)
+```
+
 ## Lendo e analisando texto com python
 
 ### Strings
@@ -123,7 +153,7 @@ livro.strip()
 
 Veja o [repositório](https://github.com/ABZ-Aaron/CheatSheets).
 
-### Listas
+## Listas
 
 Allen Downey define uma lista em Python:
 
@@ -186,5 +216,118 @@ print(str_musics)
 - Trabalhando com ficheiros simples em python: https://programminghistorian.org/pt/licoes/trabalhando-ficheiros-texto-python
 - Contagem de frequência de palavras: https://programminghistorian.org/pt/licoes/contagem-frequencia-palavras-python 
 - palavras-chave em contexto com python: https://programminghistorian.org/pt/licoes/palavras-chave-contexto-usando-n-grams-python
-- Controladores de fluxo
+
+## Controladores de fluxo
+
+[Python Basics 2](https://hub.binder.constellate.org/user/ithaka-tdm-notebooks-mb3z11hb/notebooks/python-basics-2.ipynb) de [Nathan Kelber](http://nkelber.com/) e Ted Lawless
+
+### Tipos de controle de fluxo
+
+
+|Declaração|Significado|Condição de execução|
+|---|---|---|
+|`if`|se|se a condição for atendida|
+|`elif`|senão se|se nenhuma condição anterior for atendida *e* esta condição for atendida|
+|`else`|senão|se nenhuma condição for atendida (nenhuma condição é fornecida para uma instrução `else`)|
+|`while`|enquanto|enquanto a condição for verdadeira|
+|`for`|para|executar em um loop um quantidade de vezes|
+|`try`|tentar|tente isso e execute o código `except` se ocorrer um erro|
+
+### if / elif / else
+
+Operações condicionais
+
+```python
+number = int(input('Digite um número: '))
+```
+
+```python
+if number > 0:
+    print('positive')
+elif number < 0:
+    print('negative')
+else:
+    print('zero')
+```
+
+### Criando iterações for
+
+É fundamental entender a estrutura de iteração, realizar um loop com python.
+
+Iterar é a capacidade de executar um bloco de instruções repetidamente.
+
+```python
+# utilizar for para percorrer a lista musics
+for music in musics:
+    length_music = len(music)
+    print(f'A música é {music} e ela possui {length_music} letras.\n')
+```
+
+```python
+# utilizar range para percorrer um intervalo de valores
+for i in range(0, len(musics)):
+    print(f'A música é {musics[i]} e ela possui {len(musics[i])} letras.\n')
+```
+```python
+# create a list
+list_names = []
+# input the names of the students
+for i in range(1,6):
+    name = input(f'Digite o nome do estudante número {i}: ')
+    list_names.append(name)
+```
+
+```python
+# loop na lista musics e salva cada item em um arquivo txt
+for music in musics:
+    # abre o arquivo txt
+    file = open(music + '.txt', 'w') # w = write
+    # escreve o valor usando format
+    file.write(str(f'A música é {music} e ela possui {len(music)} letras.\n'))
+    file.close() # fecha o arquivo
+```
+
+#### for usando range(), len() e enumerate()
+
+```python
+```
+
+#### continue e break
+
+- A continue statement immediately restarts the loop.
+
+- A break statement immediately exits the loop.
+
+```python
+```
+
+### while
+
+Fluxo de execução para uma instrução while:
+
+1. Determine se a condição é verdadeira ou falsa.
+
+1. Se for falsa, saia da instrução while e continue a execução da próxima instrução.
+
+1. Se a condição for verdadeira, execute o corpo e então volte ao passo 1.
+
+```python
+# criar uma lista de uma contagem de 10 até 0
+import time
+count = 10
+while count > 0:
+    print(count)
+    time.sleep(1)
+    count -= 1
+print("Ok, Ladies, now let's get in formation!")
+```
+
+### try / except
+
+```python
+```
+
+
+
+
 - Desafio 2
