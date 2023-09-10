@@ -1,13 +1,15 @@
-def dobrar_valor(valor=int):
-    '''Dobra o valor passado como parâmetro
-    >>> dobrar_valor(10)
-    20
-    '''
-    return valor * 2
+# linha de comentário contém um # no início
+# comentários são ignorados pelo computador
+# geralmente iniciamos um script com comentários que explicam o que ele faz
 
+# importamos as bibliotecas que serão necessárias
+import datetime  # biblioteca para trabalhar com datas e horas
 
-# chamada da função dobrar_valor
-valor_base = int(input('Digite o valor: '))
-valor_dobrado = dobrar_valor(valor_base)
+# cada linha abaixo é uma instrução que será executada pelo computador
+# na ordem em que aparecem
 
-print(f'o dobro do valor é {valor_dobrado}')
+hora_atual = datetime.datetime.now()  # criamos uma variável para armazenar a hora atual
+nome = input('Digite seu nome: ')  # recebemos um valor de entrada do usuário
+print(
+    f'Olá, {nome}! São {hora_atual.hour} horas e {hora_atual.minute} minutos.'
+)  # imprimimos a mensagem na tela

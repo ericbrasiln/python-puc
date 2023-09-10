@@ -162,15 +162,30 @@ Allen Downey define uma lista em Python:
 >Há várias formas para criar uma lista; a mais simples é colocar os elementos entre colchetes ([ e ])
 
 Listas são mutáveis. Podem conter elementos de qualquer tipo.
+
 ```python
-musics = ['Lemonade', 'Halo', 'Freedom','Flawless']
-years = [2000, 2019, 2016, 2013]
+musics = ['Tigresa', 'Cajuína', 'Sampa','Alegria, Alegria']
+years = [2000, 1978, 1978, 1967]
 empty = []
-multi = ['singer', 1.70, ['jay-z', 'blue ivy']]
+multi = ['cantor', 1.68, ['Gilberto Gil', 'Maria Bethânia', 'Gal Costa']
+```
 
-years[1] = 2016
+Podemos acessar os elementos de uma lista usando índices.
+
+```python
+musics[0]
+```
+
+E podemos alterar os elementos de uma lista.
+
+```python
+years[0] = 1977
 years
+```
 
+Para saber o tamanho de uma lista, podemos usar a função `len()`
+
+```python
 len(musics)
 ```
 
@@ -180,10 +195,10 @@ len(musics)
 
 ```python
 # append - adiciona um elemento ao final de uma lista
-musics.append('Formation')
+musics.append('Estrangeiro')
 
 # extend toma uma lista como argumento e adiciona todos os elementos
-new_songs = ['Crazy in love', 'Hold up']
+new_songs = ['Musa Híbrida', 'Abraçaço']
 musics.extend(new_songs)
 print(musics)
 
@@ -191,7 +206,7 @@ print(musics)
 musics.sort()
 musics.sort(reverse=True) # ordena a lista em ordem decrescente
 
-musics.append('Artpop')
+musics.append('Refavela')
 print(musics)
 
 #pop - remove um elemento da lista
@@ -200,9 +215,9 @@ print(musics)
 
 # del - remove um elemento da lista
 del musics[0]
-
+Halo
 # remove - remove um elemento da lista
-musics.remove('Halo')
+musics.remove('Abraçaço')
 print(musics)
 
 # transformar uma lista em uma string
@@ -289,7 +304,29 @@ for music in musics:
 
 #### for usando range(), len() e enumerate()
 
+O `range()` é uma função que retorna uma sequência de números. Ela recebe três argumentos: `start`, `stop` e `step`.
+
+Se você passar apenas um argumento, o `range()` vai considerar que esse argumento é o `stop` e vai começar a sequência em `0` e vai incrementar de `1` em `1`.
+
 ```python
+for i in range(5):
+    print(i)
+```
+A função `len()` retorna o tamanho de um objeto. Se o objeto for uma string, ela retorna o número de caracteres. Se o objeto for uma lista, ela retorna o número de elementos.
+
+Podemos então usar o `range()` e o `len()` para percorrer uma lista.
+
+```python
+for i in range(len(musics)):
+    print(i)
+```
+
+Já `enumerate()`, retorna uma tupla com o índice e o valor do elemento.
+É bastante útil quando queremos acessar o índice e o valor do elemento ao mesmo tempo.
+
+```python
+for i, music in enumerate(musics):
+    print(i, music)
 ```
 
 #### continue e break

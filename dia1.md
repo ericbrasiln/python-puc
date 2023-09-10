@@ -9,27 +9,42 @@
 ## Introdução à Python
 
 - O que é Python e por que é usado?
-- Como instalar o Python?
-- Ambiente de trabalho no VSCode
 
-## Conceitos básicos de programação em Python
+### Como executamos um programa em Python?
 
-### O temido terminal! 
+Várias formas de executar o Python ou programas e scripts em Python. Vejamos algumas que serão utilizadas neste curso.
 
-Podemos e comumente vamos executar comandos e scripts diretamente através de linhas de comando no terminal.
+#### Python interativo e o temido terminal
 
+O Python interativo é uma forma de executar o Python diretamente no terminal. Para acessar o Python interativo, basta digitar `python` no terminal ou no GitBash.
+
+```bash
+python
 ```
-python3 <nome-do-script>.py
 
+Assim que você pressionar enter, você verá uma mensagem de boas-vindas e o prompt `>>>`. Isso significa que o Python está pronto para receber comandos.
+
+```python
+>>> print('Alô, Mundo!')
+```
+
+Podemos e comumente vamos executar *scripts* diretamente através de linhas de comando no terminal.
+
+```bash
+python <nome-do-script>.py
 ``` 
 
-Ou ainda, você pode acessar o python em seu terminal e executar comandos de forma interativa executando o comando:
-
-```
-python3
-```
-
 Vamos explorar um pouco o terminal e o python interativo.
+
+#### Jupyter Notebooks
+
+OS Jupyter Notebooks são documentos que podem conter texto, código, gráficos e muito mais. Eles são uma ótima maneira de compartilhar e executar código Python diretamente no navegador ou em um ambiente de desenvolvimento integrado (IDE) como o VSCode.
+
+Nesse curso vamos utilizar Jupyter Notebooks em alguns momentos para facilitar a execução de códigos e a visualização de resultados.
+
+Você pode baixar o arquivo `.ipynb` e executá-lo no seu computador ou pode executá-lo diretamente no navegador através do [Binder](https://mybinder.org/).
+
+## Conceitos básicos de programação em Python
 
 ### Variáveis
 
@@ -52,7 +67,7 @@ print(nome)
 #### Nomeando variáveis
 
 Os nomes das variáveis podem ser tão longos ou curtos quanto você quiser e podem incluir:
-- letras maiúsculas e minísculas (A-Z)
+- letras maiúsculas e minúsculas (A-Z)
 - dígitos (0-9)
 - underscores (_)
 
@@ -90,7 +105,7 @@ Você não precisa memorizar essa lista. Na maior parte dos ambientes de desenvo
 
 #### Redefinindo variáveis
 
-As variáveis não são fixas, é possível atribuir novos valores a uma varivável que já havia sido definida anteriormente.
+As variáveis não são fixas, é possível atribuir novos valores a uma variável que já havia sido definida anteriormente.
 
 ```python
 nome = 'Eric'
@@ -187,6 +202,35 @@ print(f'Olá, {new_name}! Como vai?')
 
 ## Desafio 1: *Seu primeiro script*
 
-Monte um script que receba o nome de uma pessoa e sua idade. Imprima na tela uma mensagem de saudação (que inclua o nome) e informe quantos anos ela terá em 2030.
+Um script é um arquivo de texto que contém uma sequência de instruções que serão executadas pelo computador. Vejamos um exemplo de script em Python.
 
-Tente utilizar os operadores aritméticos e as funções print(), format() e input().
+```python
+# linha de comentário contém um # no início
+# comentários são ignorados pelo computador
+# geralmente iniciamos um script com comentários que explicam o que ele faz
+
+# importamos as bibliotecas que serão necessárias
+import datetime # biblioteca para trabalhar com datas e horas
+
+# cada linha abaixo é uma instrução que será executada pelo computador
+# na ordem em que aparecem
+
+hora_atual = datetime.datetime.now() # criamos uma variável para armazenar a hora atual
+nome = input('Digite seu nome: ') # recebemos um valor de entrada do usuário
+print(f'Olá, {nome}!') # imprimimos uma mensagem na tela
+print(f'São {hora_atual.hour} horas e {hora_atual.minute} minutos.') # imprimimos outra mensagem na tela
+``` 
+
+Esse documento de texto simples, deve ser salvo com a extensão `.py` para que o computador reconheça que se trata de um script em Python. Podemos salvar com o título `hora_atual.py`.
+
+Para executar o script, basta digitar no terminal:
+
+```bash
+python hora_atual.py
+```
+
+**Vamos ao desafio!**
+
+Monte um script que receba o **nome** de uma pessoa e a **idade**. Imprima na tela **uma mensagem de saudação** (que inclua o nome) e informe **quantos anos ela terá em 2030**.
+
+Tente utilizar os operadores aritméticos e as funções `print()`, `format()` e `input()`.
