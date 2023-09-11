@@ -46,7 +46,7 @@ Segundo [Allen Downey](https://penseallen.github.io/PensePython2e/08-strings.htm
 
 A expressão entre colchetes chama-se índice. O índice aponta qual caractere da sequência você quer
 
-![](https://media.tenor.com/WOGcOj0L3vgAAAAC/caetano-veloso.gif)
+![Caetano](https://media.tenor.com/WOGcOj0L3vgAAAAC/caetano-veloso.gif)
 
 ```python
 music = 'Terra'
@@ -228,10 +228,6 @@ print(str_musics)
 
 ---
 
-- Trabalhando com ficheiros simples em python: https://programminghistorian.org/pt/licoes/trabalhando-ficheiros-texto-python
-- Contagem de frequência de palavras: https://programminghistorian.org/pt/licoes/contagem-frequencia-palavras-python 
-- palavras-chave em contexto com python: https://programminghistorian.org/pt/licoes/palavras-chave-contexto-usando-n-grams-python
-
 ## Controladores de fluxo
 
 [Python Basics 2](https://hub.binder.constellate.org/user/ithaka-tdm-notebooks-mb3z11hb/notebooks/python-basics-2.ipynb) de [Nathan Kelber](http://nkelber.com/) e Ted Lawless
@@ -250,7 +246,17 @@ print(str_musics)
 
 ### if / elif / else
 
-Operações condicionais
+São operadores condicionais que permitem que você execute um código se uma condição for verdadeira. Podemos entender da seguinte forma:
+
+SE (`if`) uma condição for verdadeira, execute tal ação. SENÃO (`else`), execute outra ação. 
+
+>Se (`if`) o semáforo **estiver vermelho** (condição 01), **pare** (ação 01). SENÃO (`else`), **siga** (ação 02).
+
+Podemos incluir outras condições com o operador `elif` (SENÃO SE).
+
+>Se (`if`) o semáforo **estiver vermelho** (condição 01), **pare** (ação 01). Senão, se (`elif`) **estiver amarelo** (condição 2), **reduza a velocidade** (ação 2). Senão (`else`), **siga** (ação 3).
+
+Vejamos um exemplo:
 
 ```python
 number = int(input('Digite um número: '))
@@ -265,6 +271,10 @@ else:
     print('zero')
 ```
 
+A estrutura é `if` seguida da condição e dois pontos. Na linha seguinte, o bloco de código que será executado se a condição for verdadeira.
+
+Atenção para a indentação. O Python usa a indentação para definir blocos de código.
+
 ### Criando iterações for
 
 É fundamental entender a estrutura de iteração, realizar um loop com python.
@@ -274,32 +284,7 @@ Iterar é a capacidade de executar um bloco de instruções repetidamente.
 ```python
 # utilizar for para percorrer a lista musics
 for music in musics:
-    length_music = len(music)
-    print(f'A música é {music} e ela possui {length_music} letras.\n')
-```
-
-```python
-# utilizar range para percorrer um intervalo de valores
-for i in range(0, len(musics)):
-    print(f'A música é {musics[i]} e ela possui {len(musics[i])} letras.\n')
-```
-```python
-# create a list
-list_names = []
-# input the names of the students
-for i in range(1,6):
-    name = input(f'Digite o nome do estudante número {i}: ')
-    list_names.append(name)
-```
-
-```python
-# loop na lista musics e salva cada item em um arquivo txt
-for music in musics:
-    # abre o arquivo txt
-    file = open(music + '.txt', 'w') # w = write
-    # escreve o valor usando format
-    file.write(str(f'A música é {music} e ela possui {len(music)} letras.\n'))
-    file.close() # fecha o arquivo
+    print(f'O nome da música é {music}.')
 ```
 
 #### for usando range(), len() e enumerate()
@@ -317,8 +302,9 @@ A função `len()` retorna o tamanho de um objeto. Se o objeto for uma string, e
 Podemos então usar o `range()` e o `len()` para percorrer uma lista.
 
 ```python
-for i in range(len(musics)):
-    print(i)
+# utilizar range para percorrer um intervalo de valores
+for i in range(0, len(musics)):
+    print(f'A música é {musics[i]} e ela possui {len(musics[i])} letras.\n')
 ```
 
 Já `enumerate()`, retorna uma tupla com o índice e o valor do elemento.
@@ -329,16 +315,44 @@ for i, music in enumerate(musics):
     print(i, music)
 ```
 
-#### continue e break
-
-- A continue statement immediately restarts the loop.
-
-- A break statement immediately exits the loop.
+Para começar a contagem do índice em `1`, basta passar o argumento `start` para a função `enumerate()`.
 
 ```python
+for i, music in enumerate(musics, start=1):
+    print(i, music)
 ```
 
+#### continue e break
+
+O Python possui duas palavras reservadas que permitem controlar o fluxo de execução de um loop: `continue` e `break`.
+
+Como o próprio nome sugere, `continue` permite que você pule uma iteração do loop e continue a execução do mesmo.
+
+Por exemplo, se não quisermos imprimir um item de uma lista que inicia com a letra `A`, podemos usar o `continue` para pular essa iteração.
+
+```python
+for music in musics:
+    if music.startswith('A'):
+        continue
+    print(music)
+```
+
+Ou seja, o `continue` reinicia o loop sem executar o código que vem depois dele.
+
+A palavra reservada `break` permite que você interrompa a execução do loop. Vamos ver um exemplo de encerrar um loop quando um item da lista termina com a letra `a`.
+
+```python
+for music in musics:
+    if music.endswith('a'):
+        break
+    else:
+        print(music)
+```
+Ou seja, o `break` interrompe o loop e o código que vem depois dele não é executado.
+
 ### while
+
+O `while` é um loop que executa um bloco de código **enquanto** uma condição for verdadeira.
 
 Fluxo de execução para uma instrução while:
 
@@ -352,19 +366,28 @@ Fluxo de execução para uma instrução while:
 # criar uma lista de uma contagem de 10 até 0
 import time
 count = 10
-while count > 0:
-    print(count)
-    time.sleep(1)
-    count -= 1
-print("Ok, Ladies, now let's get in formation!")
+while count > 0:  # enquanto count for maior que 0
+    print(count)  # imprima count
+    time.sleep(1)  # aguarde 1 segundo
+    count -= 1  # subtraia 1 de count
+print("Decolar!")
 ```
 
 ### try / except
 
+O `try` permite que você teste um bloco de código. E caso ele não seja executado com sucesso, você pode executar um outro bloco de código, definido pelo `except`.
+
 ```python
+try:
+    if len(musics) == 0:
+        print('A lista de músicas está vazia.')
+except:
+    print('A lista não está vazia.')
 ```
 
+Existem vários tipos de erros que podem ser tratados com o `try` e `except`. Veja a lista completa [aqui](https://docs.python.org/3/library/exceptions.html#bltin-exceptions).
 
 
+## Desafio 2
 
-- Desafio 2
+[Contagem de Frequências de Palavras com Python](https://programminghistorian.org/pt/licoes/contar-frequencias-palavras-python)

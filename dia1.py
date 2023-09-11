@@ -1,15 +1,22 @@
-# linha de comentário contém um # no início
-# comentários são ignorados pelo computador
-# geralmente iniciamos um script com comentários que explicam o que ele faz
+''' Script para apresentar a noção de variáveis em Python
+'''
+nome = 'João'  # variável do tipo string
+idade = 20  # variável do tipo inteiro
+altura = 1.80  # variável do tipo float
 
-# importamos as bibliotecas que serão necessárias
-import datetime  # biblioteca para trabalhar com datas e horas
-
-# cada linha abaixo é uma instrução que será executada pelo computador
-# na ordem em que aparecem
-
-hora_atual = datetime.datetime.now()  # criamos uma variável para armazenar a hora atual
 nome = input('Digite seu nome: ')  # recebemos um valor de entrada do usuário
 print(
-    f'Olá, {nome}! São {hora_atual.hour} horas e {hora_atual.minute} minutos.'
+    f'Olá, {nome}! Aproveite o curso de Python!'
 )  # imprimimos a mensagem na tela
+
+idade = int(input("Qual a sua idade: "))
+
+nascimento = 2023 - idade
+
+resposta = str(input(f"Isso quer dizer que você nasceu em {nascimento}?"))
+
+dif_dois_metros = 2 - altura
+
+dif_dois_metros == altura
+
+dif_dois_metros != altura
