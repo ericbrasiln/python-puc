@@ -10,6 +10,15 @@
 
 - O que é Python e por que é usado?
 
+### Pq Python 󱔎 ?
+
+[Python](https://docs.constellate.org/key-terms/#python) é uma das linguagens de programação que mais crescem no mundo. Aprender Python] é uma ótima escolha pois é uma linguagem:
+
+* amplamente adotada nas humanidades digitais e ciência de dados;
+* que tem uma curva de aprendizado menor do que outras linguagens; 
+* flexível, possuindo amplo suporte para lidar com dados numéricos e textuais;
+* que lembra o inglês e é legível para quem sabe esse idioma.
+
 ### Como executamos um programa em Python?
 
 Várias formas de executar o Python ou programas e scripts em Python. Vejamos algumas que serão utilizadas neste curso.

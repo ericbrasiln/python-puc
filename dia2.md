@@ -42,7 +42,7 @@ Segundo [Allen Downey](https://penseallen.github.io/PensePython2e/08-strings.htm
 
 >Strings não são como números inteiros, de ponto flutuante ou booleanos. Uma string é uma sequência, ou seja, uma coleção ordenada de outros valores. (...) Uma string é uma sequência de caracteres.
 
-É possível acessar um caracter específico da string com o operador []
+É possível acessar um caractere específico da string com o operador []
 
 A expressão entre colchetes chama-se índice. O índice aponta qual caractere da sequência você quer
 
