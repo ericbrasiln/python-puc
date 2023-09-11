@@ -12,14 +12,14 @@ Duração: dias 18, 19, 20 e 21 de setembro, de 17h às 20h, por Zoom.
 
 ### [Dia 0 (antes do curso)](dia0.md)
 
-- Errar é importante!
 - Como instalar o Python?
 - Ambiente de trabalho no VSCode.
 - Terminal e GitBash.
 
-### [Dia 1](dia1.md)
+### [Dia 1](dia1.ipynb)
 
 - Apresentação geral.
+    - Errar é importante!
 - Introdução à Python
     - O que é Python e por que é usado?
     - Como executamos um programa em Python?
@@ -30,7 +30,7 @@ Duração: dias 18, 19, 20 e 21 de setembro, de 17h às 20h, por Zoom.
     - print() input() e format()
 - Desafio 1: *Seu primeiro script*
 
-### [Dia 2](dia2.md)
+### [Dia 2](dia2.ipynb)
 
 - Dúvidas sobre Desafio 1
 - Criando uma função.
