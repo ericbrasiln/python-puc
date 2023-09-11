@@ -53,3 +53,11 @@ Ver vídeo
 - Instalar GitBash
 
 Com ele poderemos usar os mesmos comandos do terminal do macOS e Linux.
+
+---
+
+[Próximo →](dia1.md)
+
+[← Anterior](README.md)
+
+[↑ Início](./README.md)

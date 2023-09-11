@@ -243,3 +243,11 @@ python hora_atual.py
 Monte um script que receba o **nome** de uma pessoa e a **idade**. Imprima na tela **uma mensagem de saudação** (que inclua o nome) e informe **quantos anos ela terá em 2030**.
 
 Tente utilizar os operadores aritméticos e as funções `print()`, `format()` e `input()`.
+
+---
+
+[Próximo →](dia2.md)
+
+[← Anterior](dia0.md)
+
+[↑ Início](./README.md)

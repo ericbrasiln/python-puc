@@ -391,3 +391,11 @@ Existem vários tipos de erros que podem ser tratados com o `try` e `except`. Ve
 ## Desafio 2
 
 [Contagem de Frequências de Palavras com Python](https://programminghistorian.org/pt/licoes/contar-frequencias-palavras-python)
+
+---
+
+[Próximo →](./dia3.ipynb)
+
+[← Anterior](dia1.md)
+
+[↑ Início](./README.md)
