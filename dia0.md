@@ -12,7 +12,7 @@ Nessa página, você encontrará instruções para instalar o Python no Windows,
 
 Veja o vídeo de instalação, também [disponível no YouTube](https://youtu.be/QPmIsKgdifI):
 
-![Instalando o Python no Windows](https://github.com/ericbrasiln/python-puc/blob/63c12a1a5113d553e4989ec961fb3335d0db8dd2/assets/python-windows.mp4)
+https://github.com/ericbrasiln/python-puc/assets/58128421/be860402-a1e9-4557-b1a6-1ff277cb65fd
 
 #### Instalando o Python no Linux:
 
@@ -48,9 +48,9 @@ Para informações sobre Homebrew, acesse https://brew.sh/pt-br/ e para informa�
 
 Instale o VSCode e as extensões Python, e o pacote de idioma Português (Brasil).
 
-Veja o vídeo de instalação, também [disponível no YouTube](https://youtu.be/VyY1xDSl6wU)
+Veja o vídeo de instalação, também [disponível no YouTube](https://youtu.be/VyY1xDSl6wU):
 
-![Instalando o VSCode](https://github.com/ericbrasiln/python-puc/blob/63c12a1a5113d553e4989ec961fb3335d0db8dd2/assets/vscode-windows.mp4)
+https://github.com/ericbrasiln/python-puc/assets/58128421/7bc71a5d-0f3b-4062-9e2a-9ba036ffb3dc
 
 ### O temido Terminal
 
@@ -62,9 +62,9 @@ Para abrir o terminal no macOS, basta pressionar as teclas `Command + Espaço` e
 
 - Instalar GitBash
 
-Veja o vídeo de instalação, também [disponível no YouTube](https://youtu.be/PGIuYvkctj0)
+Veja o vídeo de instalação, também [disponível no YouTube](https://youtu.be/PGIuYvkctj0):
 
-![Instalando o GitBash](https://github.com/ericbrasiln/python-puc/blob/63c12a1a5113d553e4989ec961fb3335d0db8dd2/assets/git-windows.mp4)
+https://github.com/ericbrasiln/python-puc/assets/58128421/de51310c-c074-49e0-9b21-909543a67483
 
 Com ele poderemos usar os mesmos comandos do terminal do macOS e Linux.
 
