@@ -68,10 +68,15 @@ https://github.com/ericbrasiln/python-puc/assets/58128421/de51310c-c074-49e0-9b2
 
 Com ele poderemos usar os mesmos comandos do terminal do macOS e Linux.
 
+## Opcionais mas muito recomendados
+
+- Crie um conta no GitHub: [https://github.com/signup](https://github.com/signup)
+- Leia a lição "Introdução à Linha de Comando Bash" de Ian Milligan e James Baker no [The Programming Historian](https://programminghistorian.org/en/lessons/intro-to-bash). A versão em português da lição está em faze de revisão e sua pré-visualização pode ser acessada [aqui](http://programminghistorian.github.io/ph-submissions/pt/esbocos/traducoes/introducao-linha-comando-bash)
+
 ---
 
 [Próximo →](dia1.ipynb)
 
 [← Anterior](README.md)
 
-[↑ Início](./README.md)
+[↑ Início](#dia-0-antes-de-começar)
