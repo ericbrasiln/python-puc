@@ -15,6 +15,7 @@ Duração: dias 18, 19, 20 e 21 de setembro, de 17h às 20h, por Zoom.
 - Como instalar o Python?
 - Ambiente de trabalho no VSCode.
 - Terminal e GitBash.
+- Opcionais
 
 ### [Dia 1](dia1.ipynb)
 
