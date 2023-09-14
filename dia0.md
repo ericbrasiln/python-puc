@@ -68,6 +68,18 @@ https://github.com/ericbrasiln/python-puc/assets/58128421/de51310c-c074-49e0-9b2
 
 Com ele poderemos usar os mesmos comandos do terminal do macOS e Linux.
 
+##### Executando o python no GitBash
+
+Para executarmos o python no GitBash precisamos executar mais um comando. Ele incluirá um alias (apelido) na confioguração do bash para que todas vez que executarmos `python`, o GitBash execute o executável correto:
+
+```
+echo "alias python='winpty python.exe'" >> ~/.bashrc
+```
+
+Para uma explicação completa desse comando, ver esta [resposta no StackOverflow](https://stackoverflow.com/a/36530750/12751702).
+
+Reinicie o GitBash, e execute `python`!
+
 ## Opcionais mas muito recomendados
 
 - Crie um conta no GitHub: [https://github.com/signup](https://github.com/signup)
