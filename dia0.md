@@ -70,7 +70,7 @@ Com ele poderemos usar os mesmos comandos do terminal do macOS e Linux.
 
 ##### Executando o python no GitBash
 
-Para executarmos o python no GitBash precisamos executar mais um comando. Ele incluirá um alias (apelido) na confioguração do bash para que todas vez que executarmos `python`, o GitBash execute o executável correto:
+Para executarmos o python no GitBash precisamos executar mais um comando. Ele incluirá um alias (apelido) na configuração do bash para que todas vez que executarmos `python`, o GitBash execute o executável correto:
 
 ```
 echo "alias python='winpty python.exe'" >> ~/.bashrc
